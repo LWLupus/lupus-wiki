@@ -1,2 +1,0 @@
-# lupus-wiki
-wiki
