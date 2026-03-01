@@ -6,3 +6,5 @@
 
 ## Anime
 * [AnimeSite](https://example.com) - Sub and Dub available.
+
+# Streaming Resources
