@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: "Wiki Name"
-  text: "The ultimate resource list."
-  tagline: Free, open-source, and fast.
+  name: "Lupus Wiki"
+  text: "A list of stuff"
+  tagline: FREE!!!
   actions:
     - theme: brand
       text: Get Started
