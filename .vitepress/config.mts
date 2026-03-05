@@ -1,16 +1,37 @@
-sidebar: [
-  {
-    text: 'Resources',
-    collapsed: false, // Set to true if you want the group to start closed
-    items: [
-      { text: 'Streaming', link: '/streaming' },
-      { text: 'Software', link: '/software' } // <--- Add this line
-    ]
+import { defineConfig } from 'vitepress';
+
+export default defineConfig({
+  title: 'LWL WIKI',
+
+  markdown: {
+    theme: {
+      light: 'catppuccin-mocha',
+      dark: 'catppuccin-mocha',
+    },
   },
-  {
-    text: 'Gaming', // You can even create a whole new section!
-    items: [
-      { text: 'Emulators', link: '/emulators' } 
+
+  themeConfig: {
+    siteTitle: 'LWL WIKI',
+    sidebar: [
+      { text: 'Introduction 📚', link: '/introduction' },
+      {
+        text: 'Wiki 🌐',
+        collapsed: false,
+        items: [
+          { text: 'AI 🤖', link: '/ai' },
+          { text: 'Mobile 📱', link: '/mobile' },
+          { text: 'Streaming 📺', link: '/streaming' },
+          { text: 'Games 👾', link: '/games' }
+        ]
+      },
+      {
+        text: 'Misc 💠',
+        collapsed: true,
+        items: [
+          { text: 'Tutorials', link: '/tutorial' },
+          { text: 'Test', link: '/test' }
+        ]
+      }
     ]
   }
-]
+});

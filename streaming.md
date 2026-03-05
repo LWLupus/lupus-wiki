@@ -1,10 +1,13 @@
-# Streaming Resources
+# Streaming
 
-## Lists
-* [Fmhy](https://Fmhy.net) - Best for 4K quality.
-* [Another Site](https://example.com) - Great for old classics.
+## Streaming sites (DDL)
+* [🌟**SpenFlix**](https://watch.spencerdevs.xyz/) - My personal Favorite. But the other ones are stil RLY good.
+* [**Hexa**](https://hexa.su) 
+* [**ShuttleTV**](https://shuttletv.su/) 
+* [**FlickyStream**](https://flickystream.ru/) 
+* [**RiveStream**](https://rivestream.org/) 
 
-## Anime
-* [AnimeSite](https://example.com) - Sub and Dub available.
 
-# ll
+## Streaming Apps (Torrent)
+* [🌟**StremIO**](https://www.stremio.com/)/[Tutorial](/tutorial#streaming) - Available to download on all platforms.
+* [**StremIO KAI**](https://github.com/allecsc/Stremio-Kai) - A more beautiful version of the stremio desktop app.

@@ -1,0 +1,81 @@
+/* .vitepress/theme/custom.css */
+:root {
+  --vp-c-brand-1: #b4befe; 
+  --vp-c-brand-2: #89b4fa;
+  
+  --vp-layout-max-width: 1440px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #585b70;
+  border-radius: 10px;
+}
+details {
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+details summary {
+  background: transparent !important;
+  padding: 6px 8px !important;
+  font-weight: 600 !important;
+}
+
+
+
+/* SCROLLL AND STICKY NAVBAR */
+html {
+  overflow-x: clip;
+  overflow-y: auto;
+}
+body {
+  overflow-x: clip;
+  min-height: 100vh;
+}
+.VPContent {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+.vp-doc div[class*="language-"] {
+  overflow-x: auto;
+  max-width: 100%;
+}
+.vp-doc table {
+  display: block;
+  overflow-x: auto;
+  width: 100%;
+}
+.vp-doc img {
+  max-width: 100%;
+  height: auto;
+}
+.VPNav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* TOOL TIP */
+
+.tooltip {
+  position: relative;
+  cursor: help;
+}
+
+.tooltip:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+}
