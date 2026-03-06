@@ -3,6 +3,8 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   base: '/lupus-wiki/', 
 
+  description: 'A Wiki made by Lupus',
+
   title: 'LWL WIKI',
 
   markdown: {
