@@ -1,4 +1,4 @@
-# Streaming
+# *Streaming*
 
 ## Streaming sites (DDL)
 * [🌟**SpenFlix**](https://watch.spencerdevs.xyz/) - My personal Favorite. But the other ones are stil RLY good.

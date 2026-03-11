@@ -1,4 +1,8 @@
 /* .vitepress/theme/custom.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+
+
 :root {
   --vp-c-brand-1: #b4befe; 
   --vp-c-brand-2: #89b4fa;
@@ -79,3 +83,22 @@ body {
   white-space: nowrap;
   pointer-events: none;
 }
+
+
+
+/* Font Nunito*/
+
+/** Import is at the top**/
+
+:root {
+  --vp-font-family-base: 'Nunito', sans-serif;
+}
+
+
+
+
+/* Sidebar text size */
+.VPSidebar .VPSidebarItem .text {
+  font-size: 18px;
+}
+

@@ -1,9 +1,11 @@
 <script setup>
 import DefaultTheme from 'vitepress/theme'
+import InteractiveGrid from './components/InteractiveGrid.vue'
 import { useRoute } from 'vitepress'
 import { useData } from 'vitepress'
 import { watch, onMounted } from 'vue'
 
+const { Layout } = DefaultTheme
 const route = useRoute()
 const { frontmatter } = useData()
 
@@ -25,6 +27,10 @@ watch(() => route.path, wrapEmojis)
 
 <template>
   <DefaultTheme.Layout>
+    <template #layout-bottom>
+      <InteractiveGrid />
+    </template>
+
     <template #home-hero-image v-if="frontmatter.layout === 'home'">
       <div class="ascii-hero-container">
         <pre v-pre class="ascii-art">
@@ -40,8 +46,15 @@ watch(() => route.path, wrapEmojis)
         </pre>
       </div>
     </template>
+
+    <template #home-hero-info-after v-if="frontmatter.layout === 'home'">
+      <a href="/changelog" class="changelog-btn">
+        v0.1.3 (click to view the changelog)
+      </a>
+    </template>
   </DefaultTheme.Layout>
 </template>
+
 
 <style scoped>
 :global(:root) {
@@ -93,5 +106,26 @@ watch(() => route.path, wrapEmojis)
   .ascii-art {
     font-size: 8px;
   }
+}
+
+/* Changelog Button */
+
+.changelog-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.3rem 0.7rem;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  color: var(--vp-c-text-2);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+.changelog-btn:hover {
+  background: var(--vp-c-brand-1);
+  color: var(--vp-c-bg);
+  border-color: var(--vp-c-brand-1);
 }
 </style>
