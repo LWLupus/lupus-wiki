@@ -49,7 +49,7 @@ watch(() => route.path, wrapEmojis)
     </template>
 
     <template #home-hero-info-after v-if="frontmatter.layout === 'home'">
-      <a href="/changelog/" class="changelog-btn">v0.1.3 (click to view the changelog)</a>
+       <a :href="withBase('/changelog')" class="changelog-btn">v0.1.3 (click to view the changelog)</a>
     </template>
   </DefaultTheme.Layout>
 </template>
