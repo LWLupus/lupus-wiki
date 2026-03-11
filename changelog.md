@@ -8,8 +8,5 @@
 ●   Fixed inconsistencies in title *italicizations*     
 ●   Fixed sidebar emojies and made the sidebar bigger   
 ●   Added mobile Social Media   
-●   Added a square effect on mouse? 
-●   Added a tools Section
-●   
-●   
-●   
+●   Added a square effect on mouse?     
+●   Added a tools Section       
