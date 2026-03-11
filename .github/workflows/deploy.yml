@@ -19,31 +19,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+        uses: actions/checkout@v5          
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5        
         with:
-          node-version: 20
-          # Removed the 'cache: npm' line because it causes the lockfile error
+          node-version: 22
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5   
 
       - name: Install dependencies
-        # Changed 'npm ci' to 'npm install' so it works without a lockfile
-        run: npm install
+        run: npm ci
 
       - name: Build with VitePress
         run: npm run docs:build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v3   
         with:
-          # Changed from 'docs/.vitepress/dist' to '.vitepress/dist' 
-          # (Assuming your .vitepress folder is in the main directory)
           path: .vitepress/dist
 
   deploy:
@@ -52,7 +46,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     needs: build
     runs-on: ubuntu-latest
-    name: Deploy
     steps:
       - name: Deploy to GitHub Pages
         id: deployment

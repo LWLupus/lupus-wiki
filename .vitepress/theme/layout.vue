@@ -1,6 +1,7 @@
 <script setup>
 import DefaultTheme from 'vitepress/theme'
 import InteractiveGrid from './components/InteractiveGrid.vue'
+import { withBase } from 'vitepress'
 import { useRoute } from 'vitepress'
 import { useData } from 'vitepress'
 import { watch, onMounted } from 'vue'
