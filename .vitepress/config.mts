@@ -1,6 +1,10 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
+  base: '/lupus-wiki/', 
+
+  description: 'A Wiki made by Lupus',
+
   title: 'LWL WIKI',
 
   markdown: {
@@ -20,7 +24,7 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    siteTitle: 'LWL WIKI',
+    siteTitle: 'LWL WIKI',    
     sidebar: [
       { text: '📚Introduction', link: '/introduction' },
       { text: '📃Changelog', link: '/changelog' },
